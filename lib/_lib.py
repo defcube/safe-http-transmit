@@ -35,9 +35,9 @@ def transmit(url, data=None, max_tries=10, timeout=60, error_sleep_time=4, data_
     :param max_tries: How many times should we retry?
     :type max_tries: int
     :param timeout: How long should we wait for each try?
-    :type timeout: int
+    :type timeout: float
     :param error_sleep_time: How long should we wait before retrying after a failure
-    :type error_sleep_time: int
+    :type error_sleep_time: float
     :param data_dict: Alternative to passing a string for "data"
     :type data_dict: dict
     :return: The body of the HTTP transmission result
