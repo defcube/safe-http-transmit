@@ -61,7 +61,7 @@ def transmit(url, data=None, max_tries=10, timeout=60, error_sleep_time=4, data_
             rh.close()
             return res
         except (urllib.error.HTTPError, socket.error, urllib.error.URLError) as e:
-            logger.warn("Couldn't load {0}. Got this error: {1}".format(url, e))
+            logger.warning("Couldn't load {0}. Got this error: {1}".format(url, e))
             if getattr(e, 'code', '') == 404:
                 raise Http404
             if i >= max_tries:
