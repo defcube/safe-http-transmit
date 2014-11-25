@@ -41,7 +41,7 @@ def transmit(url, data=None, max_tries=10, timeout=60, error_sleep_time=4, data_
     :param data_dict: Alternative to passing a string for "data"
     :type data_dict: dict
     :return: The body of the HTTP transmission result
-    :rtype: str
+    :rtype: bytes
     """
     import time
     logger.debug("Loading {0}".format(url))
