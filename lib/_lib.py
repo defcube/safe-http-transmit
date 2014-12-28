@@ -48,7 +48,7 @@ def transmit(url, data=None, max_tries=10, timeout=60, error_sleep_time=4, data_
     if data_dict:
         if data:
             raise ValueError("Cannot pass data_dict and data")
-        data = urlencode(data_dict)
+        data = urlencode(data_dict).encode()
     i = 0
     while True:
         i += 1

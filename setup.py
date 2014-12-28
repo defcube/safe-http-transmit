@@ -4,7 +4,7 @@ readme = open('README.rst').read()
 
 setup(
     name='safe-http-transmit',
-    version='1.01.3',
+    version='1.1.4',
     author_email='gattster@gmail.com',
     author='Philip Gatt',
     description="A safe HTTP transmitter.",
